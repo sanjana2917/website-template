@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="../public/fonts/js/all.js">
+    <link rel="stylesheet" href="../public/fonts/css/all.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../public/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Kevin </span><br>Jen From Australia</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------this is about--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../public/images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only
+                             global options like gradients and shadows, and write your own CSS with our
+                         variables, maps, functions, and mixins.Bootstrap utilizes Sass for a modular
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>UI/UX design Training at ET institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at starapps LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at coin Digital pvt.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX design Training at ET institute</li>
+                            <li><span>2016</span><br>MBA from MIT Banglore.</li>
+                            <li><span>2014</span><br>MBA from ISM Banglore.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------services------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-lists">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h1>Web Design</h1>
+                    <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only
+                        global options like gradients and shadows, and write your own CSS with our
+                   </p>
+                   <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h1>UI/UX Design</h1>
+                    <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only 
+                        global options like gradients and shadows, and write your own CSS with our
+                   </p>
+                   <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h1>App Design</h1>
+                    <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only
+                        global options like gradients and shadows, and write your own CSS with our
+                   </p>
+                   <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------portfolio-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../public/images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only 
+                            global options like gradients and shadows, and write your own CSS with our
+                       </p>
+                       <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../public/images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only 
+                            global options like gradients and shadows, and write your own CSS with our
+                       </p>
+                       <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../public/images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping APP</h3>
+                        <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only 
+                            global options like gradients and shadows, and write your own CSS with our
+                       </p>
+                       <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------------contact-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fas fa-paper-plane"></i>contact@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i>9876543210</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="../public/images/my-cv.pdf" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name ="Message" rows="6" placeholder="your text"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Jaya. made with <i class="fas fa-heart"></i> by Jaya Anasuya</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
